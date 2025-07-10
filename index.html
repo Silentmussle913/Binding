@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Bedrock UI Bindings Reference</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+      padding: 20px;
+    }
+    h1 {
+      color: #00ffcc;
+    }
+    h2 {
+      color: #ffcc00;
+      margin-top: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #333;
+      color: #00ffff;
+    }
+    tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Minecraft Bedrock UI Bindings Reference</h1>
+
+<h2>🔋 Experience Bar Bindings</h2>
+<table>
+  <tr><th>Binding Name</th><th>Type</th><th>Description</th></tr>
+  <tr><td>#exp_progress</td><td>Float</td><td>From 0.0 to 1.0, how full the XP bar is.</td></tr>
+  <tr><td>#level_number</td><td>Integer</td><td>Player’s current experience level.</td></tr>
+  <tr><td>#level_number_visible</td><td>Boolean</td><td>Whether to display the level number.</td></tr>
+</table>
+
+<h2>❤️ Health / Hunger / Armor</h2>
+<table>
+  <tr><th>Binding Name</th><th>Type</th><th>Description</th></tr>
+  <tr><td>#health</td><td>Float</td><td>Current health (0.0 to max health).</td></tr>
+  <tr><td>#health_max</td><td>Float</td><td>Max health (usually 20.0).</td></tr>
+  <tr><td>#armor</td><td>Integer</td><td>Armor level (0–20).</td></tr>
+  <tr><td>#hunger</td><td>Integer</td><td>Hunger level (0–20).</td></tr>
+  <tr><td>#saturation</td><td>Float</td><td>Saturation level.</td></tr>
+</table>
+
+<h2>🏹 Inventory / Hotbar</h2>
+<table>
+  <tr><th>Binding Name</th><th>Type</th><th>Description</th></tr>
+  <tr><td>#hotbar_selected_slot_index</td><td>Integer</td><td>The currently selected hotbar slot (0–8).</td></tr>
+  <tr><td>#hotbar_size</td><td>Integer</td><td>Number of slots in hotbar.</td></tr>
+  <tr><td>#inventory_size</td><td>Integer</td><td>Size of player inventory.</td></tr>
+  <tr><td>#selected_item_name</td><td>String</td><td>Name of the currently held item.</td></tr>
+</table>
+
+<h2>🧭 Compass / Coordinates / Crosshair</h2>
+<table>
+  <tr><th>Binding Name</th><th>Type</th><th>Description</th></tr>
+  <tr><td>#crosshair_visible</td><td>Boolean</td><td>Whether to show the crosshair.</td></tr>
+  <tr><td>#coordinates_visible</td><td>Boolean</td><td>Player coordinates visibility toggle.</td></tr>
+  <tr><td>#compass_angle</td><td>Float</td><td>Rotation angle of compass.</td></tr>
+</table>
+
+<h2>🎮 General Gameplay</h2>
+<table>
+  <tr><th>Binding Name</th><th>Type</th><th>Description</th></tr>
+  <tr><td>#is_creative_mode</td><td>Boolean</td><td>True if player is in Creative.</td></tr>
+  <tr><td>#is_spectator_mode</td><td>Boolean</td><td>True if player is in Spectator.</td></tr>
+  <tr><td>#is_survival_mode</td><td>Boolean</td><td>True if in Survival.</td></tr>
+  <tr><td>#player_name</td><td>String</td><td>Current player’s name.</td></tr>
+  <tr><td>#world_time</td><td>Float</td><td>Current time in ticks (0–24000).</td></tr>
+</table>
+
+<h2>📺 System / Screen State</h2>
+<table>
+  <tr><th>Binding Name</th><th>Type</th><th>Description</th></tr>
+  <tr><td>#screen_visible</td><td>Boolean</td><td>Whether the UI screen is visible.</td></tr>
+  <tr><td>#visible</td><td>Boolean</td><td>Used for conditional display of UI components.</td></tr>
+  <tr><td>#focused</td><td>Boolean</td><td>Whether the element is currently focused.</td></tr>
+</table>
+
+</body>
+</html>
